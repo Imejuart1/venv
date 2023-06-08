@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    {% if emails_list %}
+        <ul>
+            {% for email in emails_list %}
+                <li>{{ email }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No emails found.</p>
+    {% endif %}
+</body>
+</html>
